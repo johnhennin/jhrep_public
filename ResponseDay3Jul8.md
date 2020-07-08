@@ -1,4 +1,4 @@
-Responses for Day3, July 8
+Responses for Day 3, July 8
 
 A. The reason we split the data into test sets and training sets is because one set (the training set) is used to create the model, whereas the test set is used to test the model on how it handles information that it hasn't seen before. If we trained the model on all the data, we'd have a model that's pretty good at predicting the training features, but probably not good at predicting any new features.
 
