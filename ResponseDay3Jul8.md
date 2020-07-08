@@ -1,4 +1,4 @@
-##Responses for Day3, July 8
+Responses for Day3, July 8
 
 A. The reason we split the data into test sets and training sets is because one set (the training set) is used to create the model, whereas the test set is used to test the model on how it handles information that it hasn't seen before. If we trained the model on all the data, we'd have a model that's pretty good at predicting the training features, but probably not good at predicting any new features.
 B. The relu function takes all the negative values in the model and sets them to zero, so they don't interfere with the actually helpful positive values in the model. The softmax function takes the logits outputted by the neural network and transforms them into probabilities that the input image belongs to each category. These probabilities add to 1. 10 neurons are used in the third and last layer to map to each type of clothing (since there are ten types of clothing).
