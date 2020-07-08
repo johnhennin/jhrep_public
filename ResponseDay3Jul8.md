@@ -15,13 +15,19 @@ D.
    
    4-6. This wasn't a question and, consequently, I'm not sure how to answer this, so here's my code if that helps:
    
-      random_int=np.random.choice(np.arange(0,len(x_test)+1))
-      y_pred=np.argmax(model.predict(x_test)[random_int])
       plt.figure(figsize=(6,3))
       plt.subplot(1, 2, 1)
       plt.imshow(x_test[random_int],cmap="binary")
+
+      colors=[]
+      for n in model.predict(x_test)[random_int]:
+         if n==max(model.predict(x_test)[random_int]):
+            colors.append("C0")
+         else:
+            colors.append("grey")
       plt.subplot(1, 2, 2)
-      plt.bar(np.arange(0,10),model.predict(x_test)[random_int])
+      plt.bar(np.arange(0,10),model.predict(x_test)[random_int],color=colors)
       plt.xticks(np.unique(y_train))
+      plt.ylim((0, max(model.predict(x_test)[random_int])+10))
       plt.yticks([]);
       
