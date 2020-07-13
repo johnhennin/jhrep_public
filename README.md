@@ -9,4 +9,4 @@ John Hennin
 3. [Exercise 3, July 9](https://johnhennin.github.io/jhrep_public/ResponseDay4Jul9)
 
 ## Projects
-1. [Project 1](https://johnhennin.github.io/jhrep_public/jh_Project1Responses)
+1. [Project 1](https://johnhennin.github.io/jhrep_public/jh_Project1)
