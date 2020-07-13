@@ -1,3 +1,8 @@
+# Project 1
+
+[![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/487px-OpenCV_Logo_with_text_svg_version.svg.png)](https://youtu.be/AL39c4daimg "John Hennin OpenCV Project Output")
+
+
 Responses for Project 1
 
 1. The social distance detector was fairly effective. The only errors it faced were with distance recognition and people recognition, as sometimes the violation reading didn't match the actual distance and not every person was recognized by the object detector.
