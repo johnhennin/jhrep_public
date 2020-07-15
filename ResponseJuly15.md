@@ -11,4 +11,5 @@ B. 1. This plot helps show the relationship between certain variables in the dat
 ![Figure 6](Figure_6.png)
 
 B. 2. The training MSE, or mean squared error, actually increases during these last five epochs. The validation MSE decreases, which would normally be a fairly good sign, but the fairly significant discrepancy between the validation MSE and training MSE indicates that the model is very overfit and, therefore, won't handle potential new data well.
+
 C. The 4 different sized models represented different models (with different amounts of convolutional layers) and how well they performed based on these differences. Notably, after 50 and 100 epochs the large model and the medium model, respectively, developed a huge discrepancy between validation and training losses. The tiny and small models seemed to do fairly well, with the tiny model producing the smallest discrepancy.
