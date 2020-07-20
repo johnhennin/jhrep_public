@@ -9,6 +9,7 @@ John Hennin
 3. [July 9](https://johnhennin.github.io/jhrep_public/ResponseDay4Jul9)
 4. [July 14](https://johnhennin.github.io/jhrep_public/ResponseJuly14)
 5. [July 15](https://johnhennin.github.io/jhrep_public/ResponseJuly15)
+6. [July 20](https://johnhennin.github.io/jhrep_public/ResponseJuly20)
 
 ## Projects
 1. [Project 1](https://johnhennin.github.io/jhrep_public/jh_Project1)
