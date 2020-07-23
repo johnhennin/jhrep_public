@@ -1,8 +1,10 @@
 Responses for July 20
 
-A. I plan on creating a neural network that can guess a book's genre solely by the book's cover (thus disproving the age old saying "you can't judge a book by its cover"). 
+A. I plan on creating a neural network that can guess population by a number of factors, such as land size, longitude/latitude, altitude, number of houses, etc.
 
-C.
+Why: Population estimates aren't inherently useful with places like the USA or the UK, since they already record this information. However, its possible that some areas either don't have the resources to count population or simply don't want to share that information with other countries. Hopefully, with this estimate, the model can provide population data that will further our global knowledge and, in turn, affect other estimates that are dependent upon population.
+
+Plan: I will use satellite data and object detection to determine number of houses and additional data for the other features. Certain obstacles will be satellite image quality, finding satellite data, differentiating between houses and regular buildings, and house volume/height (specifically in regards to apartment buildings, as height is a relevant factor towards building population).
 
 D. 1. We used RMSprop (or root mean squared prop) in this lab and, in the article "Understanding RMSprop," we find that RMSprop can work much better (at reducing the loss function) than competing optimizers such as NAG, SGD, and Momentum.
 
