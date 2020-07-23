@@ -2,8 +2,6 @@ Response for July 21
 
 A. 1. We split the labels from the data by using .pop. The names of the labels datasets are train_y and test_y.
 
-A. 
-
 2.1 
 ```
 classifier=tf.estimator.DNNClassifier(
@@ -58,8 +56,6 @@ A. 3. The input function determines how data is converted to a Tensorflow datase
 A. 4. The classifier.train() command trains the classifier model. It takes the input function we made earlier and the steps argument (which basically specifies the number of training steps) to do so. The classifier is our DNNClassifier that uses the feature columns we defined.
 
 A. 5. The DNNClassifier got an accuracy of .9 for the test set (second best). The DNNLinearCombinedClassifier (when I specified dnn_feature_columns and dnn_hidden_units) got .867 test accuracy (third best). Finally, the LinearClassifier got .967, making it the most accurate, which I found to be surprising.
-
-Include and interpret your predicted probabilities and ROC curve plots
 
 ![pairplot](pairplot.png)
 ![hist age](hist_age.png)
