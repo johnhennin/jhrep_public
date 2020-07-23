@@ -57,7 +57,20 @@ A. 3. The input function determines how data is converted to a Tensorflow datase
 
 A. 4. The classifier.train() command trains the classifier model. It takes the input function we made earlier and the steps argument (which basically specifies the number of training steps) to do so. The classifier is our DNNClassifier that uses the feature columns we defined.
 
-A. 5. The DNNClassifier got an accuracy of .9 for the test set. The DNNLinearCombinedClassifier (when I specified dnn_feature_columns and dnn_hidden_units) got .867 test accuracy. Finally, the LinearClassifier got .967, making it the most accurate, which I found to be surprising.
+A. 5. The DNNClassifier got an accuracy of .9 for the test set (second best). The DNNLinearCombinedClassifier (when I specified dnn_feature_columns and dnn_hidden_units) got .867 test accuracy (third best). Finally, the LinearClassifier got .967, making it the most accurate, which I found to be surprising.
 
-B
+Include and interpret your predicted probabilities and ROC curve plots
 
+![pairplot](pairplot.png)
+![hist age](hist_age.png)
+
+B. 1. These two plots above demonstrate essentially the same thing, which is the age distribution of the Titanic dataset. From the plots, it is clear that the majority of passengers were in their mid to late 20's. Additionally, most of the passengers were below the age of 50, even 40. The data seems skewed to the right.
+
+B. 2. A categorical column is a column describing a category (e.g. sex, class, etc.) rather than an actual numerical value (e.g. weight, age, etc.), but the category placement is described by a numerical value (e.g. the sex category could be split into male=0 and female=1). A dense feature, comparatively, is an actual numerical value, such as age or weight.
+
+B. 3. The feature columns were both categorical and dense columns. The categorical column would have the category as a key and the unique category values in a list corresponding to said key. For example, the key "sex" would correspond with the list ("male", "female"). The cross featured column age_x_gender could potentially help the model, as considering and weighting age and gender together could be a stronger indication of survivability than the two separated. Originally, without the cross featured column, the model achieved an accuracy value of .754, whereas the model with the cross featured column actually did worse, achieving an accuracy value of .720. 
+
+![Predicted Probabilities](pred_prob.png)
+![ROC Curve](ROC_curve.png)
+
+The predicted probabilities histogram illustrates the distribution of predicted chances of survival, with the majority of estimations, unfortunately, below a .5 (50%) survival rate. It seems that the model didn't predict a 0% survival rate for anyone. Moving on to the ROC curve, we see the false positive estimations versus the true positive estimations (a positive estimation is equivalent to a passenger surviving). It seems that the rate of false positives increased at a higher rate than the rate of true positives. This is indicative of a fairly poor model.
