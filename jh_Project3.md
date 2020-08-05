@@ -63,3 +63,20 @@ history2=model.fit(train_imgs2, train_labs2, batch_size=25, steps_per_epoch=18, 
 ```
 ![Final Model](finalmodel.png)
 As you can see in the above image, with 550 training images my model managed to significantly lower the validation MSE and MAE, decreasing the overfitting by quite a bit. The new training MSE and MAE were 162.87 and 10.16, respectively. Although this was technically an increase in MSE and MAE, I believe it was worth the decrease in overfitting. The new validation MSE and MAE were now 248.28 and 13.44, respectively. The difference between training and validation MSE and MAE was now not as drastic. Although my model could certainly be improved, given my experience and knowledge, I am pretty satisfied with my progress and final result. 
+
+![Result1](act11.14pred14.96.png)
+
+Actual: 11.14
+Predicted 14.96
+
+![Result2](act36.56pred13.42.png)
+
+Actual: 36.56
+Predicted 13.42
+
+![Result3](act8.76pred14.86.png)
+
+Actual: 8.76
+Predicted 14.86
+
+The model is possibly overfit. The range for estimations seems fairly thin (13-15), which indicates overtraining on the training data. This would also be supported by the fact that the training set was so small, as the model may not have been given a very diverse (in regards to population values) data input. However, as I don't have validation and training accuracy scores to compare, I can't say, with 100% confidence, that the model is overfit. Additionally, the data wasn't perfect, as it's impossible to distinguish between things like shops and homes, where shops would have 0 people living there (or maybe a few, given that some people may live in their shop, but on average less than homes) and homes would probably have relatively much more.
