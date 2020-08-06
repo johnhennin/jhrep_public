@@ -19,5 +19,7 @@ John Hennin
 1. [Project 1](https://johnhennin.github.io/jhrep_public/jh_Project1)
 2. [Project 2](https://johnhennin.github.io/jhrep_public/jh_Project2)
 3. [Project 3](https://johnhennin.github.io/jhrep_public/jh_Project3)
+4. [Project 4](https://johnhennin.github.io/jhrep_public/jh_Project4)
+5. [Final Project](https://johnhennin.github.io/jhrep_public/jh_FinalProject)
 
 
